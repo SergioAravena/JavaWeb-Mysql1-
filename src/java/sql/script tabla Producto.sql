@@ -3,7 +3,8 @@ SQLyog - Free MySQL GUI v5.11
 Host - 5.5.13 : Database - bd
 *********************************************************************
 Server version : 5.5.13
-*/
+*/
+
 
 SET NAMES utf8;
 
@@ -31,3 +32,6 @@ CREATE TABLE `producto` (
 insert into `producto` (`pr_id`,`pr_nombreProducto`,`pr_marcaProducto`,`pr_precio`,`pr_comprador`) values (1,'microondas','Samsung',25000,'Pablo Vargas');
 insert into `producto` (`pr_id`,`pr_nombreProducto`,`pr_marcaProducto`,`pr_precio`,`pr_comprador`) values (2,'LED 42 pulg.','LG',120000,'Pablo Vargas');
 insert into `producto` (`pr_id`,`pr_nombreProducto`,`pr_marcaProducto`,`pr_precio`,`pr_comprador`) values (3,'notebook','Acer',100000,'Carol Wilson');
+
+
+desc producto;
