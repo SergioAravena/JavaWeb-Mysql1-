@@ -8,6 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+import dto.ProductoDto;
+
+import dao.*;
+
+import java.util.List;
+
 /**
  *
  * @author Sergio Aravena
@@ -28,8 +35,31 @@ public class BuscarPorComprador extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
+            String nombre = request.getParameter("txtCompradorBuscado".trim());
+            
+            List<ProductoDto> lista = new ProductoDaoImplementado().buscarPorComprador(nombre);
             
             
+            
+            
+            //*** el punto importante ahora es que es que esta coleccion
+            //sea enviada a un jsp para su desplige 
+            //propuesto : investigue como cargar el arreglo 
+            //propio de los servlet para luego enviar 
+            // informacion a un jsp 
+            
+            /**
+             * Para enviar la lista a desplegar en un jsp necesitamos cargarla
+             * en una variable, para esto settiamos el request
+             */
+
+            request.setAttribute("listadoComprador", lista);
+            
+            //ahora redireccionamos al jsp para el despliegue
+            //OJO le decimos donde ir y cargamos el request
+            
+            request.getRequestDispatcher("Paginas/ListarPorComprador")
+                  .forward(request, response);
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
