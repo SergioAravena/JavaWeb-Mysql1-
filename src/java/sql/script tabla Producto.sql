@@ -35,3 +35,6 @@ insert into `producto` (`pr_id`,`pr_nombreProducto`,`pr_marcaProducto`,`pr_preci
 
 
 desc producto;
+
+
+delete from 
