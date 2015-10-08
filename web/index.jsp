@@ -9,9 +9,32 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Menu</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+        <nav>
+
+            <li>Agregar
+            <li>
+                <ul><a href="Paginas/AgregarProducto.jsp">AgregarProducto</a></ul>
+
+            </li>
+        </li>
+            
+        <li>Listar
+            
+        <li>
+            <ul><a  href="Paginas/BuscarPorId.jsp" >BuscarPorid</a></ul>
+            <ul><a  href="Paginas/ListarPorComprador.jsp" >ListarComprador</a></ul>
+            
+        </li>
+            
+            
+        </li>
+        
+        
+        </nav>
+        
     </body>
 </html>
