@@ -58,7 +58,7 @@ public class BuscarPorComprador extends HttpServlet {
             //ahora redireccionamos al jsp para el despliegue
             //OJO le decimos donde ir y cargamos el request
             
-            request.getRequestDispatcher("Paginas/ListarPorComprador")
+            request.getRequestDispatcher("Paginas/ListarPorComprador.jsp")
                   .forward(request, response);
             
             out.println("<!DOCTYPE html>");

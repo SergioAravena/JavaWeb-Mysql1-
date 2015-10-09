@@ -15,25 +15,22 @@
         
         <nav>
 
-            <li>Agregar
-            <li>
-                <ul><a href="Paginas/AgregarProducto.jsp">AgregarProducto</a></ul>
+            Agregar
+           
+                
+            <li><ul><a href="Paginas/AgregarProducto.jsp">AgregarProducto</a></ul></li>
 
-            </li>
-        </li>
+
+
+            Listar
+            <li> <ul><a  href="Paginas/BuscarPorId.jsp" >BuscarPorid</a></ul> </li>
+
             
-        <li>Listar
-            
-        <li>
-            <ul><a  href="Paginas/BuscarPorId.jsp" >BuscarPorid</a></ul>
-            <ul><a  href="Paginas/ListarPorComprador.jsp" >ListarComprador</a></ul>
-            
-        </li>
-            
-            
-        </li>
-        
-        
+
+            <li> <ul><a href="Paginas/BuscarPorComprador.jsp">BuscarPorComprador</a></ul> </li>
+
+     
+
         </nav>
         
     </body>
